@@ -75,7 +75,6 @@ config:
     - field.storage.node.field_categories
     - field.storage.block_content.field_description
     - field.storage.taxonomy_term.field_description
-    - field.storage.user.user_picture
   actions:
     tagify.settings:
       simpleConfigUpdate:
