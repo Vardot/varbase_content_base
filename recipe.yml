@@ -76,8 +76,6 @@ config:
     - field.storage.block_content.field_description
     - field.storage.taxonomy_term.field_description
     - field.storage.user.user_picture
-  import:
-    varbase_content_base: '*'
   actions:
     tagify.settings:
       simpleConfigUpdate:
