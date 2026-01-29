@@ -29,6 +29,7 @@
     "drupal/entity": "~1",
     "drupal/entity_clone": "~2",
     "drupal/entity_usage": "~2",
+    "drupal/entity_browser": "~2",
     "drupal/entityqueue": "~1",
     "drupal/entityqueue_form_widget": "~2",
     "drupal/inline_entity_form": "~3",

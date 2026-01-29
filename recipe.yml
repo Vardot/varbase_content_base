@@ -56,7 +56,9 @@ install:
   - page_cache
   - menu_block
   - views_infinite_scroll
+  - entity_browser
   - entity_usage
+  - entity_browser
   - entityqueue
   - entityqueue_form_widget
   - inline_entity_form
@@ -65,7 +67,6 @@ install:
   - menu_position
   - tagify
   - rabbit_hole
-  - entity_clone
 config:
   strict:
     - field.storage.node.body
