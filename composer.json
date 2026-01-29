@@ -1,0 +1,43 @@
+{
+  "name": "drupal/varbase_content_base",
+  "description": "A foundational recipe for content structure and management in Varbase. Provides core content configuration including node types, taxonomy vocabularies, block content, menu system, path aliases, and essential content-related modules.",
+  "type": "drupal-recipe",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Vardot",
+      "homepage": "https://www.drupal.org/vardot",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/varbase_content_base",
+    "source": "http://cgit.drupalcode.org/varbase_content_base"
+  },
+  "require": {
+    "drupal/core": "~11.3.0",
+    "drupal/token": "~1",
+    "drupal/token_filter": "~2",
+    "drupal/eca": "~3",
+    "drupal/bpmn_io": "~3",
+    "drupal/field_group": "~4",
+    "drupal/smart_trim": "~2",
+    "drupal/advanced_text_formatter": "~3",
+    "drupal/block_class": "~4",
+    "drupal/menu_block": "~1",
+    "drupal/views_infinite_scroll": "~2",
+    "drupal/entity": "~1",
+    "drupal/entity_clone": "~2",
+    "drupal/entity_usage": "~2",
+    "drupal/entityqueue": "~1",
+    "drupal/entityqueue_form_widget": "~2",
+    "drupal/inline_entity_form": "~3",
+    "drupal/ultimate_cron": "~2",
+    "drupal/rabbit_hole": "~2",
+    "drupal/diff": "~2",
+    "drupal/menu_position": "~1",
+    "drupal/tagify": "~1.0",
+    "drupal/better_exposed_filters": "~7",
+    "drupal/date_filter": "~1"
+  }
+}
