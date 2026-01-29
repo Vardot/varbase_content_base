@@ -15,7 +15,6 @@ install:
   - image
   - options
   - path
-  - layout_discovery
   - entity
   - ctools
   - ctools_block
@@ -71,7 +70,6 @@ config:
   strict:
     - field.storage.node.body
     - field.storage.node.field_description
-    - field.storage.node.field_tags
     - field.storage.node.field_categories
     - field.storage.block_content.field_description
     - field.storage.taxonomy_term.field_description
