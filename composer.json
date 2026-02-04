@@ -33,7 +33,6 @@
     "drupal/entityqueue": "~1",
     "drupal/entityqueue_form_widget": "~2",
     "drupal/inline_entity_form": "~3",
-    "drupal/ultimate_cron": "~2",
     "drupal/rabbit_hole": "~2",
     "drupal/diff": "~2",
     "drupal/menu_position": "~1",

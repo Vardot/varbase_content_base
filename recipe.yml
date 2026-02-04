@@ -29,7 +29,6 @@ install:
   - block_class
   - contextual
   - diff
-  - dynamic_page_cache
   - eca
   - bpmn_io
   - eca_ui
@@ -53,7 +52,6 @@ install:
   - filter
   - field_ui
   - help
-  - page_cache
   - menu_block
   - views_infinite_scroll
   - entity_browser
@@ -63,7 +61,6 @@ install:
   - entityqueue_form_widget
   - inline_entity_form
   - inline_form_errors
-  - ultimate_cron
   - menu_position
   - tagify
   - rabbit_hole
