@@ -64,6 +64,7 @@ install:
   - menu_position
   - tagify
   - rabbit_hole
+  - vmi
 config:
   strict:
     - field.storage.node.body
