@@ -30,6 +30,7 @@ install:
   - contextual
   - diff
   - eca
+  - modeler_api
   - bpmn_io
   - eca_ui
   - eca_base
