@@ -66,6 +66,7 @@ install:
   - tagify
   - rabbit_hole
   - vmi
+  - varbase_components
 config:
   strict:
     - field.storage.node.body
