@@ -91,6 +91,9 @@ config:
     user.role.content_editor:
       grantPermissions:
         - 'access contextual links'
+        - 'access content overview'
+        - 'view all revisions'
+        - 'view own unpublished content'
         - 'access taxonomy overview'
         - 'administer menu'
         - 'create canvas_page'
