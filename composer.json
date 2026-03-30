@@ -39,6 +39,7 @@
     "drupal/tagify": "~1.0",
     "drupal/better_exposed_filters": "~7",
     "drupal/date_filter": "~1",
+    "drupal/canvas_override": "1.0.x-dev",
     "drupal/vmi": "5.0.x-dev",
     "drupal/varbase_components": "4.0.x-dev"
   }
