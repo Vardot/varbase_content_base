@@ -12,7 +12,6 @@ delete_warning_message_entity_types:
   - paragraphs_library_item
   - taxonomy_term
 track_enabled_source_entity_types:
-  - block_content
   - consumer
   - content_kanban_log
   - content_moderation_state
@@ -33,7 +32,6 @@ track_enabled_source_entity_types:
   - webform_submission
   - paragraph
 track_enabled_target_entity_types:
-  - block_content
   - consumer
   - content_kanban_log
   - content_moderation_state

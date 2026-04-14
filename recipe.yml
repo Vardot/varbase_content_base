@@ -8,7 +8,6 @@ install:
   - views
   - field
   - block
-  - block_content
   - config
   - datetime
   - file
@@ -73,7 +72,6 @@ config:
     - field.storage.node.body
     - field.storage.node.field_description
     - field.storage.node.field_categories
-    - field.storage.block_content.field_description
     - field.storage.taxonomy_term.field_description
   actions:
     tagify.settings:
@@ -128,7 +126,6 @@ config:
         - 'create canvas_page'
         - 'edit canvas_page'
         - 'administer menu'
-        - 'administer page template'
         - 'administer patterns'
         - 'administer taxonomy'
         - 'create any term'
@@ -214,6 +211,7 @@ config:
         - 'delete canvas_page'
         - 'delete terms in tags'
         - 'edit canvas_page'
+        - 'edit canvas global regions'
         - 'edit terms in tags'
         - 'manipulate all entityqueues'
         - 'manipulate entityqueues'
