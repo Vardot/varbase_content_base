@@ -64,6 +64,7 @@ install:
   - tagify
   - rabbit_hole
   - content_lock
+  - node_edit_protection
   - canvas_override
   - vmi
   - varbase_components
