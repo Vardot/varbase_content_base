@@ -63,6 +63,7 @@ install:
   - menu_position
   - tagify
   - rabbit_hole
+  - content_lock
   - canvas_override
   - vmi
   - varbase_components
