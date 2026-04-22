@@ -25,7 +25,6 @@ install:
   - field_group
   - smart_trim
   - advanced_text_formatter
-  - block_class
   - contextual
   - diff
   - eca
