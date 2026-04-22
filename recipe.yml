@@ -1,5 +1,5 @@
 name: Varbase Content Base
-description: A foundational recipe for content structure and management in Varbase. Provides core content configuration for content types, taxonomy vocabularies, block content, menu system, path aliases, and essential content-related modules.
+description: A foundational recipe for content structure and management in Varbase. Provides core content configuration for content types, taxonomy vocabularies, menu system, path aliases, and essential content-related modules.
 type: Varbase Content
 install:
   - node
@@ -193,7 +193,6 @@ config:
         - 'access content overview'
         - 'access contextual links'
         - 'access taxonomy overview'
-        - 'administer block classes'
         - 'administer components'
         - 'administer content menu items'
         - 'administer content templates'

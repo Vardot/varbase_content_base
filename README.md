@@ -1,6 +1,6 @@
 # Varbase Content Base
 
-A foundational recipe for content structure and management in Varbase. Provides core content configuration for content types, taxonomy vocabularies, block content, menu system, path aliases, and essential content-related modules.
+A foundational recipe for content structure and management in Varbase. Provides core content configuration for content types, taxonomy vocabularies, menu system, path aliases, and essential content-related modules.
 
 This recipe is designed to work as a foundation after the Drupal CMS Content Type Base recipe, extending it with Varbase-specific enhancements and configurations.
 
@@ -13,7 +13,6 @@ This recipe is designed to work as a foundation after the Drupal CMS Content Typ
   - Tags field (taxonomy reference)
   - Categories field (taxonomy reference)
 - **Taxonomy**: Vocabulary system for organizing content with custom fields
-- **Block Content**: Custom block types with the "Basic block" content type
 
 ### Field Management
 - **Field Group**: Organize fields into logical groups
@@ -23,7 +22,6 @@ This recipe is designed to work as a foundation after the Drupal CMS Content Typ
 - **Token**: Token replacement system for dynamic content
 
 ### Views & Content Management
-- **Block Class**: Add custom CSS classes to blocks
 - **Frontpage View**: Default front page content display
 - **Archive View**: Content archive by date
 - **Taxonomy Term View**: Display taxonomy term content
@@ -55,10 +53,9 @@ This recipe is designed to work as a foundation after the Drupal CMS Content Typ
 ## Configuration
 
 The recipe includes default configurations for:
-- Field storages for nodes, block content, and taxonomy terms
-- Basic block content type with body field
+- Field storages for nodes, and taxonomy terms
 - User picture field storage and display
-- Entity form and view displays for block content and users
+- Entity form and view displays for and users
 - Token view modes for all content entity types
 - Social media menu
 - ECA workflow for 403 redirect to login

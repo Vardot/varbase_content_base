@@ -1,6 +1,6 @@
 {
   "name": "drupal/varbase_content_base",
-  "description": "A foundational recipe for content structure and management in Varbase. Provides core content configuration including node types, taxonomy vocabularies, block content, menu system, path aliases, and essential content-related modules.",
+  "description": "A foundational recipe for content structure and management in Varbase. Provides core content configuration including node types, taxonomy vocabularies, menu system, path aliases, and essential content-related modules.",
   "type": "drupal-recipe",
   "license": "GPL-2.0-or-later",
   "authors": [
