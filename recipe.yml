@@ -76,6 +76,13 @@ config:
     - field.storage.node.field_categories
     - field.storage.taxonomy_term.field_description
   actions:
+    content_lock.settings:
+      simpleConfigUpdate:
+        types:
+          node:
+            - '*'
+        verbose: true
+        timeout: 1800
     tagify.settings:
       simpleConfigUpdate:
         set_default_widget: true
@@ -125,6 +132,7 @@ config:
         - 'access contextual links'
         - 'access taxonomy overview'
         - 'administer folders'
+        - 'break content lock'
         - 'create canvas_page'
         - 'edit canvas_page'
         - 'administer menu'
