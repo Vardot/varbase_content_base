@@ -1,6 +1,9 @@
 [![Varbase](https://raw.githubusercontent.com/Vardot/varbase/11.0.x/images/varbase-logo.png)](https://www.drupal.org/project/varbase)
 
 # Varbase Content Base
+[![pipeline status](https://git.drupalcode.org/project/varbase_content_base/badges/1.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_content_base/-/pipelines)
+[![Varbase Content Base](https://img.shields.io/badge/Varbase%20Content%20Base-1.0.0--alpha2-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/varbase_content_base/-/pipelines?ref=1.0.0-alpha2)
+[![Automated Functional Testing](https://git.drupalcode.org/project/varbase_project/badges/11.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_project/-/pipelines)
 
 A foundational recipe for content structure and management in Varbase. Provides core content configuration for content types, taxonomy vocabularies, menu system, path aliases, and essential content-related modules.
 
