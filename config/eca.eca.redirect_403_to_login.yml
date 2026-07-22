@@ -10,8 +10,7 @@ dependencies:
     - modeler_api
 third_party_settings:
   modeler_api:
-    modeler_id: bpmn_io
-    data: 'hash:30f03a8c0d04d4e1f8299c73d286c67a'
+    modeler_id: workflow_modeler
     label: 'Redirect 403 to Login'
     tags:
       - 'use case'

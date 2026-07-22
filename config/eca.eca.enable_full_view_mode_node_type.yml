@@ -8,7 +8,7 @@ dependencies:
     - modeler_api
 third_party_settings:
   modeler_api:
-    modeler_id: bpmn_io
+    modeler_id: workflow_modeler
     label: 'Activate Full content view mode for new node types'
     documentation: 'When a new node type is created through the UI (not during config sync), automatically activates the Full content view mode and an empty Canvas content template for it.'
     version: 1.0.0

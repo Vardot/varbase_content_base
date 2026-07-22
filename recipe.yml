@@ -29,7 +29,7 @@ install:
   - diff
   - eca
   - modeler_api
-  - bpmn_io
+  - modeler
   - eca_ui
   - eca_base
   - eca_config
