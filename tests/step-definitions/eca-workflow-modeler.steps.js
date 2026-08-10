@@ -22,7 +22,7 @@
 //
 // The three "state" assertions drive the site through drush. Drush is resolved
 // for the environment (no site path or hostname is hardcoded):
-//   1. WEBSHIP_DRUSH env var (explicit override, e.g. the recipe CI job), or
+//   1. VARBASE_E2E_DRUSH env var (explicit override, e.g. the recipe CI job), or
 //   2. DDEV project (DDEV_PROJECT_DIR with a .ddev dir)   -> `ddev drush ...`, or
 //   3. Composer project bin/drush / vendor/bin/drush      -> `<bin> --root=<web> ...`, or
 //   4. `drush` on PATH.
@@ -32,16 +32,16 @@ const fs = require('fs');
 const path = require('path');
 const { Given, Then } = require('@cucumber/cucumber');
 const { execFileSync } = require('child_process');
-const { smartSettle, friendly } = require('webship-js/tests/step-definitions/webship');
+const { smartSettle, friendly } = require('@vardot/varbase-e2e/tests/step-definitions/varbase-e2e');
 
 /**
  * Resolve the drush command vector for the current environment.
  * @returns {{cmd: string, base: string[], cwd: string}}
  */
 function resolveDrush() {
-  // 1. Explicit override, e.g. WEBSHIP_DRUSH="ddev drush" or "php vendor/bin/drush".
-  if (process.env.WEBSHIP_DRUSH) {
-    const parts = process.env.WEBSHIP_DRUSH.trim().split(/\s+/);
+  // 1. Explicit override, e.g. VARBASE_E2E_DRUSH="ddev drush" or "php vendor/bin/drush".
+  if (process.env.VARBASE_E2E_DRUSH) {
+    const parts = process.env.VARBASE_E2E_DRUSH.trim().split(/\s+/);
     return { cmd: parts[0], base: parts.slice(1), cwd: process.cwd() };
   }
   // 2. Local DDEV project.
@@ -80,7 +80,7 @@ function drush(args) {
   } catch (error) {
     throw friendly({
       action: `run drush (${cmd} ${base.join(' ')} ${args.join(' ')})`,
-      hint: 'Set WEBSHIP_DRUSH, run inside DDEV (DDEV_PROJECT_DIR), or ensure bin/drush exists.',
+      hint: 'Set VARBASE_E2E_DRUSH, run inside DDEV (DDEV_PROJECT_DIR), or ensure bin/drush exists.',
       cause: (error && error.stderr) ? String(error.stderr) : (error && error.message),
     });
   }

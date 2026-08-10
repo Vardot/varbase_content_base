@@ -11,7 +11,7 @@ module.exports = {
     // tsx loads both .js and .ts step files with zero build (replaces ts-node).
     requireModule: ['tsx/cjs'],
     require: [
-      'node_modules/webship-js/tests/step-definitions/**/*.js', // Webship-js core steps.
+      'node_modules/@vardot/varbase-e2e/tests/step-definitions/**/*.js', // Varbase E2E core steps.
       'tests/step-definitions/**/*.js',                          // Recipe custom steps.
     ],
     paths: ['tests/features/**/*.feature'],
@@ -67,15 +67,15 @@ module.exports = {
         infoTypes: '',
       },
       video: {
-        mode: 'off',                                 // WEBSHIP_VIDEO (on | on-failure | tag)
+        mode: 'off',                                 // VARBASE_E2E_VIDEO (on | on-failure | tag)
         dir: './videos',
         size: { width: 1280, height: 720 },
         filenamePattern: '{datetime}.{feature_file}.{scenario}.{status}.{ext}',
       },
       javascript: {
-        mode: 'warn',                                // WEBSHIP_JS_ERROR_MODE (fail | off)
-        levels: ['error'],                           // WEBSHIP_JS_ERROR_LEVELS
-        ignore: '',                                  // WEBSHIP_JS_ERROR_IGNORE
+        mode: 'warn',                                // VARBASE_E2E_JS_ERROR_MODE (fail | off)
+        levels: ['error'],                           // VARBASE_E2E_JS_ERROR_LEVELS
+        ignore: '',                                  // VARBASE_E2E_JS_ERROR_IGNORE
         beforeScenario: false,
         afterScenario: true,
       },

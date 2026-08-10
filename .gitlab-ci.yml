@@ -180,7 +180,7 @@ validate:yaml-lint:
 # = test = 🧪 Automated Functional Testing.
 #
 # Untars the built site, serves it with drush, installs the functional-testing
-# engine (webship-js: Playwright + Cucumber-js) and runs the recipe's suites
+# engine (varbase-e2e: Playwright + Cucumber-js) and runs the recipe's suites
 # under tests/features/**. Each suite documents what it asserts in its own
 # README; the recipe is applied in isolation (only this recipe's own modules).
 ################################################################################
@@ -200,10 +200,10 @@ validate:yaml-lint:
     FEATURES: "tests/features/$SUITE/**/*.feature"
     SLOW_MO: "0"
     FORCE_COLOR: "1"
-    WEBSHIP_REPORT_DISABLE: "1"
+    VARBASE_E2E_REPORT_DISABLE: "1"
     # The custom login step reaches the built site's drush via this override
     # (no site path / hostname hardcoded); scopes uli to LAUNCH_URL.
-    WEBSHIP_DRUSH: "php -d memory_limit=-1 ${CI_PROJECT_DIR}/../drupal-build/vendor/bin/drush"
+    VARBASE_E2E_DRUSH: "php -d memory_limit=-1 ${CI_PROJECT_DIR}/../drupal-build/vendor/bin/drush"
   before_script:
     - *php_runtime
     - *node_runtime
@@ -255,7 +255,7 @@ validate:yaml-lint:
       fi
     - REPORT="varbase-content-base--${CI_COMMIT_REF_SLUG}--automated-functional-testing-report--$(date -u +%F)--$(date -u +%H-%M)"
     - jq -s 'add' tests/reports/cucumber_report*.json > "tests/reports/merged.json"
-    - node ./node_modules/webship-js/bin/generate-reports.js
+    - node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js
         --json "tests/reports/merged.json"
         --out "tests/reports/${REPORT}.html"
         --pdf-out "tests/reports/${REPORT}.pdf"
