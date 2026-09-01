@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Move the `canvas_override` install and its `drupal/canvas_override` requirement
+  into the new `varbase_canvas_base` recipe. The Drupal Canvas permission grants
+  stay here, so the roles are unchanged for every site that applies this recipe.
 
 ## [1.0.0-rc1] - 2026-08-15
 ### Changed

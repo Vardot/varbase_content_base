@@ -40,7 +40,6 @@
     "drupal/date_filter": "~1",
     "drupal/content_lock": "~3",
     "drupal/node_edit_protection": "~1.0",
-    "drupal/canvas_override": "1.0.x-dev",
     "drupal/vmi": "5.0.x-dev",
     "drupal/varbase_components": "4.0.x-dev"
   },
