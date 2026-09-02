@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-rc3] - 2026-09-02
+### Added
+- Add the `search_index` view mode for nodes (`core.entity_view_mode.node.search_index`),
+  which the `drupal_cms_search` recipe imports but does not ship. With Search applied
+  after this recipe, creating the view mode here is the correct ordering.
+
+### Changed
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` and `drupal/vmi` to `~5.0.0`
+  for the release.
+- Update the version badge to `1.0.0-rc3` in `README.md`.
+
 ## [1.0.0-rc2] - 2026-09-01
 ### Changed
 - Remove the `canvas_override` install and its `drupal/canvas_override` requirement,
@@ -37,7 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc2...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc3...1.0.x
+[1.0.0-rc3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc2...1.0.0-rc3
 [1.0.0-rc2]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc1...1.0.0-rc2
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-beta1...1.0.0-rc1
 [1.0.0-beta1]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-alpha2...1.0.0-beta1
