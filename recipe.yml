@@ -219,7 +219,6 @@ config:
         - 'delete canvas_page'
         - 'delete terms in tags'
         - 'edit canvas_page'
-        - 'edit canvas global regions'
         - 'edit terms in tags'
         - 'manipulate all entityqueues'
         - 'manipulate entityqueues'
