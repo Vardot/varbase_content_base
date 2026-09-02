@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-rc4] - 2026-09-02
+### Added
+- Require the `vardot/aos` library, so the recipe brings the AOS library that
+  Varbase Components loads.
+
+### Fixed
+- Remove the `edit canvas global regions` permission from the Site Admin role,
+  as it is stripped with a warning on a Drupal CMS base.
+
+### Changed
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` and `drupal/vmi` to `~5.0.0`
+  for the release.
+- Update the version badge to `1.0.0-rc4` in `README.md`.
+
 ## [1.0.0-rc3] - 2026-09-02
 ### Added
 - Add the `search_index` view mode for nodes (`core.entity_view_mode.node.search_index`),
@@ -48,7 +62,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc3...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc4...1.0.x
+[1.0.0-rc4]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc3...1.0.0-rc4
 [1.0.0-rc3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc2...1.0.0-rc3
 [1.0.0-rc2]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc1...1.0.0-rc2
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-beta1...1.0.0-rc1
