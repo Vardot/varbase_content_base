@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-06
+### Changed
+- First stable release of the Varbase Content Base recipe.
+- Pin the `drupal/vmi` dependency to `~5.0.0` and `drupal/varbase_components` to `~4.0.0`
+  for the stable release.
+- Update the version badge to `1.0.0` in `README.md`.
+
 ## [1.0.0-rc4] - 2026-09-02
 ### Added
 - Require the `vardot/aos` library, so the recipe brings the AOS library that
@@ -62,7 +69,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc4...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0...1.0.x
+[1.0.0]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc4...1.0.0
 [1.0.0-rc4]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc3...1.0.0-rc4
 [1.0.0-rc3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc2...1.0.0-rc3
 [1.0.0-rc2]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc1...1.0.0-rc2
