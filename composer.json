@@ -26,7 +26,6 @@
     "drupal/menu_block": "~1",
     "drupal/views_infinite_scroll": "~2",
     "drupal/entity": "~1",
-    "drupal/entity_clone": "~2",
     "drupal/entity_usage": "~2",
     "drupal/entity_browser": "~2",
     "drupal/entityqueue": "~1",
