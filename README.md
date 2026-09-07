@@ -22,7 +22,6 @@ This recipe is designed to work as a foundation after the Drupal CMS Content Typ
 ### Field Management
 - **Field Group**: Organize fields into logical groups
 - **Smart Trim**: Intelligent text trimming with more options
-- **Advanced Text Formatter**: Enhanced text field display options
 - **Inline Entity Form**: Edit referenced entities inline
 - **Token**: Token replacement system for dynamic content
 
@@ -40,7 +39,6 @@ This recipe is designed to work as a foundation after the Drupal CMS Content Typ
   - Redirect 403 to login page
   - Content management automations
   - User workflows
-- **Rabbit Hole**: Control entity display behavior
 
 ### Content Utilities
 - **Entity Clone**: Duplicate content entities
