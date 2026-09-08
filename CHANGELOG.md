@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-09-08
+### Fixed
+- Temporarily remove Entity Clone until it has a stable release
+  ([#3621450](https://www.drupal.org/i/3621450)).
+- Temporarily remove Rabbit Hole and Advanced Text Formatter until they have stable
+  releases ([#3621492](https://www.drupal.org/i/3621492)).
+- Require the released View Modes Inventory 5.0.0 instead of the dev branch
+  ([#3621558](https://www.drupal.org/i/3621558)).
+### Changed
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` for the release.
+- Update the version badge to `1.0.1` in `README.md`.
+
 ## [1.0.0] - 2026-09-06
 ### Changed
 - First stable release of the Varbase Content Base recipe.
@@ -69,7 +81,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.1...1.0.x
+[1.0.1]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc4...1.0.0
 [1.0.0-rc4]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc3...1.0.0-rc4
 [1.0.0-rc3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc2...1.0.0-rc3
