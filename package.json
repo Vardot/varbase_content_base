@@ -15,7 +15,7 @@
   },
   "homepage": "https://www.drupal.org/project/varbase_content_base",
   "devDependencies": {
-    "@vardot/varbase-e2e": "^2.0.4"
+    "@vardot/varbase-e2e": "^2.0.7"
   },
   "overrides": {
     "@cucumber/cucumber": "12.9.0",
