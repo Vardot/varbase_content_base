@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-10-09
+### Fixed
+- Allow Tagify 2, and carry the content basics from the removed
+  `drupal_cms_content_type_base` recipe ([#3629373](https://www.drupal.org/i/3629373)).
+- Let editors see My drafts and Scheduled, and list Varbase workflow drafts
+  ([#3629373](https://www.drupal.org/i/3629373)).
+### Changed
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` for the release.
+- Update the version badge to `1.0.3` in `README.md`.
+
 ## [1.0.2] - 2026-09-26
 ### Changed
 - Update `@vardot/varbase-e2e` to 2.0.7
@@ -88,7 +98,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.2...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.3...1.0.x
+[1.0.3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.2...1.0.3
 [1.0.2]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.0-rc4...1.0.0
