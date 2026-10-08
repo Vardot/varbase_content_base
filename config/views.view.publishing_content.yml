@@ -495,7 +495,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'view publishing dashboard'
+          perm: 'access content overview'
       cache:
         type: none
         options: {  }
@@ -1149,6 +1149,7 @@ display:
           operator: in
           value:
             basic_editorial-draft: basic_editorial-draft
+            varbase_editorial_workflow-draft: varbase_editorial_workflow-draft
           group: 1
           exposed: false
           expose:
