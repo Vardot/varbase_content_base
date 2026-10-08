@@ -1,6 +1,9 @@
 name: Varbase Content Base
 description: A foundational recipe for content structure and management in Varbase. Provides core content configuration for content types, taxonomy vocabularies, menu system, path aliases, and essential content-related modules.
 type: Varbase Content
+recipes:
+  - core/recipes/content_editor_role
+  - core/recipes/image_media_type
 install:
   - node
   - taxonomy
@@ -66,13 +69,72 @@ install:
   - node_edit_protection
   - vmi
   - varbase_components
+  # The content basics drupal_cms_content_type_base used to provide: the Page
+  # content type, the basic editorial workflow, scheduling, trash, autosave and
+  # the content listings. That recipe was removed from Drupal CMS 2.2 and its
+  # last release requires Tagify 1, which no longer installs beside Drupal CMS.
+  - autosave_form
+  - bpmn_io
+  - canvas
+  - canvas_stark
+  - drupal_cms_helper
+  - linkit
+  - pathauto
+  - scheduler
+  - scheduler_content_moderation_integration
+  - tagify_user_list
+  - trash
+  - workflows
+  - content_moderation
+  # The rel attribute on menu links, which drupal_cms_privacy_basic used to
+  # install. The roles below are granted 'use menu link attributes'.
+  - menu_link_attributes
 config:
   strict:
     - field.storage.node.body
     - field.storage.node.field_description
     - field.storage.node.field_categories
     - field.storage.taxonomy_term.field_description
+  import:
+    canvas: '*'
+    node:
+      - core.entity_view_mode.node.full
+      - core.entity_view_mode.node.rss
+      - core.entity_view_mode.node.teaser
+      - system.action.node_delete_action
+      - system.action.node_make_sticky_action
+      - system.action.node_make_unsticky_action
+      - system.action.node_promote_action
+      - system.action.node_publish_action
+      - system.action.node_save_action
+      - system.action.node_unpromote_action
+      - system.action.node_unpublish_action
+      - views.view.content
+    taxonomy: '*'
+    trash: '*'
+    scheduler: '*'
+    scheduler_content_moderation_integration: '*'
   actions:
+    autosave_form.settings:
+      simpleConfigUpdate:
+        allowed_content_entity_types:
+          node:
+            bundles: []
+    menu_link_attributes.config:
+      simpleConfigUpdate:
+        attributes.rel:
+          label: Relationship
+          description: 'The "rel" attribute specifies the relationship between the current document and the linked document.'
+    scheduler.settings:
+      simpleConfigUpdate:
+        hide_seconds: true
+    trash.settings:
+      simpleConfigUpdate:
+        enabled_entity_types.node: []
+    views.view.scheduler_scheduled_media:
+      disable: {}
+    views.view.scheduler_scheduled_taxonomy_term:
+      disable: {}
     content_lock.settings:
       simpleConfigUpdate:
         types:
@@ -95,6 +157,25 @@ config:
         - 'view own unpublished content'
     user.role.content_editor:
       grantPermissions:
+        - 'access media overview'
+        - 'access trash'
+        - 'create image media'
+        - 'create page content'
+        - 'delete any image media'
+        - 'delete any page content'
+        - 'delete canvas_page'
+        - 'delete page revisions'
+        - 'edit any image media'
+        - 'edit any page content'
+        - 'revert all revisions'
+        - 'schedule publishing of nodes'
+        - 'use text format content_format'
+        - 'use basic_editorial transition unpublish'
+        - 'use basic_editorial transition create_new_draft'
+        - 'use basic_editorial transition publish'
+        - 'view any unpublished content'
+        - 'view own unpublished media'
+        - 'view scheduled content'
         - 'access contextual links'
         - 'access content overview'
         - 'view all revisions'
