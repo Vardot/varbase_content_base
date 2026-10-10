@@ -32,7 +32,7 @@
     "drupal/inline_entity_form": "~3",
     "drupal/diff": "~2",
     "drupal/menu_position": "~1",
-    "drupal/tagify": "~1.0 || ~2.0",
+    "drupal/tagify": "~2.0",
     "drupal/autosave_form": "~1",
     "drupal/bpmn_io": "~3",
     "drupal/canvas": "~1",
