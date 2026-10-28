@@ -44,6 +44,7 @@ variables:
   # Cache locations (kept inside the project dir so GitLab can cache them).
   COMPOSER_CACHE_DIR: "${CI_PROJECT_DIR}/.cache/composer"
   PLAYWRIGHT_BROWSERS_PATH: "${CI_PROJECT_DIR}/.cache/ms-playwright"
+  DRUPAL_CMS_TELEMETRY: "0"
 
 # Run for merge requests, branch pushes and tags.
 workflow:
