@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-10-29
+### Changed
+- Disable Drupal CMS telemetry in CI ([#3633837](https://www.drupal.org/i/3633837)).
+- Update the version badge to `1.0.5` in `README.md`.
+
 ## [1.0.4] - 2026-10-10
 ### Changed
 - Update the Tagify module from `~1` to `~2`, so every Varbase line uses Tagify 2
@@ -105,7 +110,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.4...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.5...1.0.x
+[1.0.5]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.4...1.0.5
 [1.0.4]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.3...1.0.4
 [1.0.3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.2...1.0.3
 [1.0.2]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.1...1.0.2
