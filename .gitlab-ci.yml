@@ -91,9 +91,9 @@ workflow:
   - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
   - composer --version
 
-# Node.js 20 (the functional-testing engine declares engines.node ">=20").
+# Node.js 24, the engines.node floor this suite and Drupal core main declare.
 .node_runtime: &node_runtime
-  - curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+  - curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
   - apt-get install -y nodejs
   - node --version && npm --version
 
@@ -238,7 +238,7 @@ validate:yaml-lint:
 ################################################################################
 "📊 Create reports":
   stage: post-test
-  image: node:20
+  image: node:24
   dependencies:
     - "🧪 Automated Functional Testing"
   rules: *opt_in_rules_report
