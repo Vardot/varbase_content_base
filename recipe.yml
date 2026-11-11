@@ -65,7 +65,6 @@ install:
   - menu_position
   - tagify
   - content_lock
-  - content_lock_timeout
   - node_edit_protection
   - vmi
   - varbase_components
