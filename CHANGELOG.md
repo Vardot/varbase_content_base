@@ -6,9 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.6] - 2026-11-12
 ### Removed
 - Stop installing the deprecated Content Lock Timeout module and drop its
-  settings; Content Lock 3 handles the timeout itself.
+  settings; Content Lock 3 handles the timeout itself
+  ([#3637145](https://www.drupal.org/i/3637145)).
+### Changed
+- Update Node.js to `>= 24.0` in `package.json` and the GitLab CI
+  ([#3635522](https://www.drupal.org/i/3635522)).
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` for the release.
+- Update the version badge to `1.0.6` in `README.md`.
 
 ## [1.0.5] - 2026-10-29
 ### Changed
@@ -113,7 +121,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.5...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.6...1.0.x
+[1.0.6]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.5...1.0.6
 [1.0.5]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.4...1.0.5
 [1.0.4]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.3...1.0.4
 [1.0.3]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.2...1.0.3
