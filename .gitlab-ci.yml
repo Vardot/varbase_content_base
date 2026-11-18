@@ -87,7 +87,7 @@ workflow:
       libzip-dev libpng-dev libjpeg-dev libwebp-dev libfreetype6-dev libicu-dev
       sqlite3 libsqlite3-dev
   - docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype
-  - docker-php-ext-install -j"$(nproc)" gd zip intl pdo_sqlite opcache
+  - docker-php-ext-install -j"$(nproc)" gd zip intl pdo_sqlite
   - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
   - composer --version
 
@@ -140,7 +140,7 @@ validate:yaml-lint:
 ################################################################################
 "📦 Install recipe site":
   stage: pre-test
-  image: php:8.4-cli
+  image: php:8.5-cli
   needs: []
   rules: *opt_in_rules
   allow_failure: false
@@ -187,7 +187,7 @@ validate:yaml-lint:
 ################################################################################
 "🧪 Automated Functional Testing":
   stage: test
-  image: php:8.4-cli
+  image: php:8.5-cli
   needs:
     - job: "📦 Install recipe site"
       artifacts: true
