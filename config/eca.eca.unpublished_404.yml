@@ -81,5 +81,5 @@ actions:
     configuration:
       exception_type: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
       response_message: ''
-      log_exception: true
+      log_exception: false
     successors: {  }
