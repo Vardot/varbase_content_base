@@ -211,6 +211,7 @@ config:
         - 'administer folders'
         - 'break content lock'
         - 'create canvas_page'
+        - 'delete canvas_page'
         - 'edit canvas_page'
         - 'administer menu'
         - 'administer patterns'
