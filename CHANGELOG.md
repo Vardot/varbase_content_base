@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-11-23
+### Fixed
+- Stop logging an Error for every 404 on unpublished content
+  ([#3639149](https://www.drupal.org/i/3639149)).
+- Keep the Utility page in one content moderation workflow
+  ([#3639151](https://www.drupal.org/i/3639151)).
+- Let Content admin delete Canvas pages
+  ([#3639150](https://www.drupal.org/i/3639150)).
+### Changed
+- Change the default PHP version to PHP 8.5 in the GitLab CI
+  ([#3639148](https://www.drupal.org/i/3639148)).
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` for the release.
+- Update the version badge to `1.0.7` in `README.md`.
+
 ## [1.0.6] - 2026-11-12
 ### Removed
 - Stop installing the deprecated Content Lock Timeout module and drop its
@@ -121,7 +135,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Content Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.6...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.7...1.0.x
+[1.0.7]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.6...1.0.7
 [1.0.6]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.5...1.0.6
 [1.0.5]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.4...1.0.5
 [1.0.4]: https://git.drupalcode.org/project/varbase_content_base/-/compare/1.0.3...1.0.4
